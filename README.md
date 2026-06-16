@@ -48,4 +48,4 @@ The app requests the following permissions to provide a seamless experience:
 
 ## 👤 Author
 
-[@awstine](https://github.com/awstine)
+[@jabalimpepe](https://github.com/awstine)
