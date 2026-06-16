@@ -1,4 +1,4 @@
-# Siaka 🚴
+# Siaka 
 
 A Kotlin Android app where cyclists input their desired kilometers and receive randomized cycling routes displayed on an interactive map.
 
@@ -15,48 +15,7 @@ Siaka helps cyclists discover new paths by generating randomized loop routes bas
 - **Coroutines & Flow** — Asynchronous programming and state management
 - **Room** — Local database for saving routes
 
-## 📱 Setup Instructions
-
-### Configure Mapbox API Key
-
-This project uses the [Secrets Gradle Plugin](https://github.com/google/secrets-gradle-plugin) to manage API keys securely.
-
-1. Create a `local.properties` file in the project root (if it doesn't exist)
-2. Add your Mapbox Access Token:
-
-```properties
-MAPBOX_ACCESS_TOKEN=your_access_token_here
-```
-
-### Build the Project
-
-```bash
-./gradlew build
-```
-
-### Run the App
-
-```bash
-./gradlew installDebug
-```
-
-## 📁 Project Structure
-
-```
-siaka/
-├── app/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/siaka/   # UI, Data, and Navigation logic
-│   │   │   └── res/              # Resources (Drawables, Layouts, Themes)
-│   │   ├── test/                 # Unit tests
-│   │   └── androidTest/          # Instrumentation tests
-│   └── build.gradle.kts
-├── build.gradle.kts              # Root build configuration
-└── settings.gradle.kts
-```
-
-## 🔐 Permissions
+## Permissions
 
 The app requests the following permissions to provide a seamless experience:
 
@@ -64,7 +23,7 @@ The app requests the following permissions to provide a seamless experience:
 - `ACCESS_COARSE_LOCATION` — For approximate location fallback
 - `INTERNET` — To fetch routes and map tiles
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Launch the app and grant location permissions
 2. Enter your desired cycling distance in kilometers in the input dialog
@@ -78,7 +37,7 @@ The app requests the following permissions to provide a seamless experience:
 | ![Loop Input](screenshots/Splash.png) | ![Route Overview](screenshots/RouteDistance.png) | ![Navigation](screenshots/Location.png) | ![End Navigation](screenshots/Navigation.png) |
 |---|---|---|---|
 
-## ✨ Future Enhancements
+## Future Enhancements
 
 - Route difficulty levels (flat, hilly, mixed)
 - Elevation profile visualization
@@ -86,13 +45,6 @@ The app requests the following permissions to provide a seamless experience:
 - Route sharing with other cyclists
 - Weather integration
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is currently unlicensed.
 
 ## 👤 Author
 
