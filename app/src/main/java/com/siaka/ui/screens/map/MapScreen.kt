@@ -85,6 +85,7 @@ import com.siaka.data.MapUiState
 import com.siaka.ui.theme.DangerRed
 import com.siaka.ui.theme.DarkNavy
 import com.siaka.ui.theme.NavigationGreen
+import com.siaka.ui.theme.SiakaTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -615,7 +616,7 @@ fun DistanceInputDialog(
                 Spacer(modifier = Modifier.height(16.dp))
                 
                 Text(
-                    "How many kilometers would you like to run today?",
+                    "How many kilometers would you like to cycle today?",
                     style = MaterialTheme.typography.bodyMedium,
                     color = Color.Gray,
                     textAlign = TextAlign.Center
@@ -667,9 +668,9 @@ fun DistanceInputDialog(
 @Preview(showBackground = true)
 @Composable
 fun MapScreenPreview() {
-    com.siaka.ui.theme.SiakaTheme {
+    SiakaTheme {
         MapScreenContent(
-            uiState = com.siaka.data.MapUiState(
+            uiState = MapUiState(
                 isLocationPermissionGranted = true,
                 userLocation = com.siaka.data.LocationPoint(-1.286389, 36.817223)
             ),
@@ -691,9 +692,9 @@ fun MapScreenPreview() {
 @Preview(showBackground = true)
 @Composable
 fun MapScreenNavigationPreview() {
-    com.siaka.ui.theme.SiakaTheme {
+    SiakaTheme {
         MapScreenContent(
-            uiState = com.siaka.data.MapUiState(
+            uiState = MapUiState(
                 isLocationPermissionGranted = true,
                 userLocation = com.siaka.data.LocationPoint(-1.286389, 36.817223),
                 isNavigating = true,
